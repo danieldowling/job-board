@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Job Walker</title>
+</head>
+<body>
+
+<div ng-controller="AppController">	
+	<ul>
+		<li ng-repeat="job in jobs">
+		<h3>{{job.jobtitle}}</h3>
+		<span>{{job.snippet}}</span>
+		</li>
+	</ul>
+</div>
+
+<!-- <script>
+
+	GoogleMapsLoader.load(function(google){
+	 	new google.maps.Map(el, options);
+	 	console.log('kyle is kool');
+	});
+
+</script> -->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
