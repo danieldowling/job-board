@@ -1,6 +1,5 @@
 var express = require('express');
 var path = require('path');
-//var GoogleMapsLoader = require('google-maps');
 var api = require('indeed-api').getInstance("719253724258089");
 
 var app = express();
@@ -19,9 +18,9 @@ app.get('/indeed', function(req, res){
 			city : "Los Angeles",
 			state : "CA"
 		})
-		.Limit(2)
+		.Limit(10)
 		.IncludePosition(true)
-		.WhereKeywords(["Information Technology"])
+		.WhereKeywords(["Web Developer"])
 		.SortBy("date")
 		.UserIP("1.2.3.4")
 		.UserAgent("Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36")

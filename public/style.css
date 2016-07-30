@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Varela Round', sans-serif; }
+
+#static h1 {
+  text-align: center;
+  border-bottom: 3px solid black; }
+#static .left-side {
+  text-align: center;
+  background-image: url(images/static_image.jpeg);
+  background: cover; }
+#static .right-side {
+  background-color: lightgrey; }
+#static #googleMap {
+  width: 600px;
+  height: 550px; }
